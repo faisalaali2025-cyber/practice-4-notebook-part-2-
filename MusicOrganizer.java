@@ -27,12 +27,17 @@ public class MusicOrganizer
 
     public boolean ValidIndex(int index){
         if (index<0 || index>=files.size())
+           return false; 
+        else{
+        return true; 
+    } 
+}
     }
-    /**
+ /**
      * Add a file to the collection.
      * @param filename The file to be added.
      */
-    public void addFile(String filename)
+ public void addFile(String filename)
     {
         files.add(filename);
     }
